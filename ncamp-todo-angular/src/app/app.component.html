@@ -1,0 +1,17 @@
+<app-user-input
+    [username]="username"
+    (onChangeUsername)="changeUsername($event)"
+    (onSaveUsername)="saveUsername()"
+    *ngIf="!usernameEntered; else isEntered"
+></app-user-input>
+
+<ng-template #isEntered>
+    <app-user-output [username]="username"></app-user-output>
+    <app-todo-list
+        [todos]="todos"
+        (onStoreTodo)="storeTodo($event)"
+        (onAddTodo)="addTodo()"
+        (onRemoveTodo)="removeTodo($event)"
+    ></app-todo-list>
+</ng-template>
+

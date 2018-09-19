@@ -1,0 +1,13 @@
+.App {
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px gray;
+  color: #2c3e50;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 60px auto;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 400px;
+}

@@ -1,0 +1,10 @@
+<input (input)="onInput($event)">
+<button (click)="onClick()">
+  Add todo
+</button>
+<ul *ngFor="let todo of todos">
+  <app-todo-item
+    [todo]="todo"
+    (onClickItem)="onClickTodo($event)"
+  ></app-todo-item>
+</ul>
